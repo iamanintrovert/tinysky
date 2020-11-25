@@ -1,0 +1,19 @@
+* NGSPICE file created from /home/mhasan13/pdk/magic/tapeout/2x2-array.ext - technology: sky130A
+
+.subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
++ dw_n429_n439# a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_bs_flash__special_sonosfet_star w=420000u l=150000u
+.ends
+
+.subckt T-cell gate drain source body sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
+Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
++ drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
+.ends
+
+.subckt home/mhasan13/pdk/magic/tapeout/2x2-array WL0 WL1 BL0 SL0 BL1 SL1 body
+X1T-cell_0[0|0] WL1 BL0 SL0 body dw_n430_n464# T-cell
+X1T-cell_0[1|0] WL0 BL0 SL0 body dw_n430_n464# T-cell
+X1T-cell_0[0|1] WL1 BL1 SL1 body dw_n430_n464# T-cell
+X1T-cell_0[1|1] WL0 BL1 SL1 body dw_n430_n464# T-cell
+.ends
+

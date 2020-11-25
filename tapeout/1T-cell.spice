@@ -1,0 +1,11 @@
+* NGSPICE file created from 1T-cell.ext - technology: sky130A
+
+.subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
++ a_n73_n11#
+X0 a_15_n11# a_n33_n99# a_n73_n11# VSUBS sky130_fd_bs_flash__special_sonosfet_star w=420000u l=150000u
+.ends
+
+.subckt T-cell gate drain source body
+Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
+.ends
+
