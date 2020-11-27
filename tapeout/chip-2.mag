@@ -449,6 +449,14 @@ use neuron-labeled-extended  neuron-labeled-extended_0
 timestamp 1606259729
 transform 1 0 630 0 1 623
 box -683 -638 4978 4166
+use inverter  inverter_0
+timestamp 1604367083
+transform 1 0 -1166 0 1 2098
+box -126 -478 242 448
+use one-way  one-way_0
+timestamp 1606105257
+transform 1 0 -618 0 1 1859
+box -37 0 183 688
 use pass-gate-inv-2  pass-gate-inv-2_0
 timestamp 1605933175
 transform 1 0 17080 0 1 -156
@@ -465,14 +473,10 @@ use pass-gate-inv-2  pass-gate-inv-2_2
 timestamp 1605933175
 transform 1 0 17078 0 1 -3752
 box -610 -156 899 1683
-use inverter  inverter_0
-timestamp 1604367083
-transform 1 0 -1166 0 1 2098
-box -126 -478 242 448
-use one-way  one-way_0
-timestamp 1606105257
-transform 1 0 -618 0 1 1859
-box -37 0 183 688
+use 2x2-array  2x2-array_0
+timestamp 1606190940
+transform 1 0 -23516 0 1 6758
+box -968 -870 3024 2996
 use neuron-labeled-extended  neuron-labeled-extended_1
 timestamp 1606259729
 transform 1 0 631 0 1 6446
@@ -489,8 +493,4 @@ use neuron-labeled-extended  neuron-labeled-extended_2
 timestamp 1606259729
 transform 1 0 630 0 1 12267
 box -683 -638 4978 4166
-use 2x2-array  2x2-array_0
-timestamp 1606190940
-transform 1 0 -23516 0 1 6758
-box -968 -870 3024 2996
 << end >>
