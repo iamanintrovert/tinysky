@@ -36,6 +36,8 @@ Vsyn1 vsyn1 gnd DC 0.42V
 
 Idc vdd "xneuron.neuron-labeled-extended-opamp_2/v" DC 10p
 
+* NGSPICE file created from chip-w-opamp.ext - technology: sky130A
+
 .subckt sky130_fd_pr__pfet_01v8_owy61o VSUBS a_n73_n61# w_n109_n123# a_15_n61# a_n33_54#
 X0 a_15_n61# a_n33_54# a_n73_n61# w_n109_n123# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
 .ends
@@ -72,7 +74,7 @@ Xsky130_fd_pr__pfet_01v8_ykwexw_0 GND VPWR VPWR in out sky130_fd_pr__pfet_01v8_y
 * Xsky130_fd_bs_flash__special_sonosfet_star_ocehe0_0 body source gate sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/dw_n429_n439#
 * + drain sky130_fd_bs_flash__special_sonosfet_star_ocehe0
 * .ends
-
+* 
 * .subckt x2-array WL0 WL1 BL0 SL0 BL1 SL1 body body BL0 SL0 SL1 BL1 SL0
 * X1T-cell_0[0|0] WL1 BL0 SL0 body dw_n430_n464# T-cell
 * X1T-cell_0[1|0] WL0 BL0 SL0 body dw_n430_n464# T-cell
@@ -185,8 +187,8 @@ XMk VGND v vk VGND sky130_fd_pr__nfet_01v8_zgaw3c
 Xpmos-diff-amp_0 v v_buff v_buff i_bias vdd_aux vss pmos-diff-amp
 Xpmos-diff-amp_1 u u_buff u_buff i_bias vdd_aux vss pmos-diff-amp
 Xpmos-diff-amp_2 a a_buff a_buff i_bias vdd_aux vss pmos-diff-amp
-Xneuron-labeled_0 vdd vss vth vk vw vr vau vad v u a axon neuron-labeled
 Xpmos-diff-amp_3 axon axon_buff axon_buff i_bias vdd_aux vss pmos-diff-amp
+Xneuron-labeled_0 vdd vss vth vk vw vr vau vad v u a axon neuron-labeled
 .ends
 
 .subckt sky130_fd_pr__nfet_01v8_5mkfxl VSUBS a_n73_n42# a_15_n42# a_n33_n130#
@@ -215,23 +217,19 @@ Xone-way_0 vss inverter_0/out vdd neuron-labeled-extended-opamp_0/v one-way
 Xone-way_1 vss inverter_1/out vdd neuron-labeled-extended-opamp_1/v one-way
 Xinverter_0 vss vsyn0 vdd inverter_0/out inverter
 Xinverter_1 vss vsyn1 vdd inverter_1/out inverter
-
 * X2x2-array_0 WL0 WL1 BL0 SL0 BL1 SL1 vss vss BL0 SL0 SL1 BL1 SL0 x2-array
-
 Xneuron-labeled-extended-opamp_0 neuron-labeled-extended-opamp_0/v neuron-labeled-extended-opamp_0/u
-+ neuron-labeled-extended-opamp_0/a vau vw vth vk vr vad vdd neuron-labeled-extended-opamp_0/vss
-+ neuron-labeled-extended-opamp_0/axon i_bias pass-gate-inv-2_0/v_in2 pass-gate-inv-2_1/v_in2
-+ pass-gate-inv-2_2/v_in2 pass-gate-inv-2_3/v_in2 vdd_aux vss vdd neuron-labeled-extended-opamp_0/v
-+ vss neuron-labeled-extended-opamp
++ neuron-labeled-extended-opamp_0/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_0/axon
++ i_bias pass-gate-inv-2_0/v_in2 pass-gate-inv-2_1/v_in2 pass-gate-inv-2_2/v_in2 pass-gate-inv-2_3/v_in2
++ vdd_aux vss vdd neuron-labeled-extended-opamp_0/v vss neuron-labeled-extended-opamp
 Xneuron-labeled-extended-opamp_1 neuron-labeled-extended-opamp_1/v neuron-labeled-extended-opamp_1/u
-+ neuron-labeled-extended-opamp_1/a vau vw vth vk vr vad vdd neuron-labeled-extended-opamp_1/vss
-+ neuron-labeled-extended-opamp_1/axon i_bias pass-gate-inv-2_0/v_in pass-gate-inv-2_1/v_in
-+ pass-gate-inv-2_2/v_in pass-gate-inv-2_3/v_in vdd_aux vss vdd neuron-labeled-extended-opamp_1/v
-+ vss neuron-labeled-extended-opamp
++ neuron-labeled-extended-opamp_1/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_1/axon
++ i_bias pass-gate-inv-2_0/v_in pass-gate-inv-2_1/v_in pass-gate-inv-2_2/v_in pass-gate-inv-2_3/v_in
++ vdd_aux vss vdd neuron-labeled-extended-opamp_1/v vss neuron-labeled-extended-opamp
 Xneuron-labeled-extended-opamp_2 neuron-labeled-extended-opamp_2/v neuron-labeled-extended-opamp_2/u
-+ neuron-labeled-extended-opamp_2/a vau vw vth vk vr vad vdd neuron-labeled-extended-opamp_2/vss
-+ neuron-labeled-extended-opamp_2/axon i_bias v_buff u_buff a_buff axon_buff vdd_aux
-+ vss vdd neuron-labeled-extended-opamp_2/v vss neuron-labeled-extended-opamp
++ neuron-labeled-extended-opamp_2/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon
++ i_bias v_buff u_buff a_buff axon_buff vdd_aux vss vdd neuron-labeled-extended-opamp_2/v
++ vss neuron-labeled-extended-opamp
 Xpass-gate-inv-2_0 pass-gate-inv-2_0/v_in v_syn sel pass-gate-inv-2_0/clk_bar pass-gate-inv-2_0/VPWR
 + vss pass-gate-inv-2_0/v_in2 vss pass-gate-inv-2_0/VPWR v_syn pass-gate-inv-2_0/v_in
 + sel vss pass-gate-inv-2_0/inverter_0/VPWR pass-gate-inv-2
@@ -245,6 +243,8 @@ Xpass-gate-inv-2_3 pass-gate-inv-2_3/v_in axon_syn sel pass-gate-inv-2_3/clk_bar
 + vss pass-gate-inv-2_3/v_in2 vss vdd axon_syn pass-gate-inv-2_3/v_in sel vss pass-gate-inv-2_3/inverter_0/VPWR
 + pass-gate-inv-2
 .ends
+
+
 
 
 * instantiate the neuron for sim
