@@ -1,21 +1,21 @@
-timestamp 1606536151
+timestamp 1606604430
 version 8.3
 tech sky130A
 style ngspice()
 scale 1000 1 500000
 resistclasses 2200000 3050000 1700000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12200 125 125 47 47 29 5
-use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_0 1 0 694 0 1 622
-use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_1 1 0 694 0 1 6448
-use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_2 1 0 694 0 1 12268
-use one-way one-way_1 1 0 -543 0 1 7572
-use inverter inverter_1 1 0 -1150 0 1 7804
-use 2x2-array 2x2-array_0 1 0 -23516 0 1 6758
-use pass-gate-inv-2 pass-gate-inv-2_0 1 0 17167 0 1 3624
-use pass-gate-inv-2 pass-gate-inv-2_1 1 0 17167 0 1 1858
-use pass-gate-inv-2 pass-gate-inv-2_3 1 0 17165 0 1 -1786
-use pass-gate-inv-2 pass-gate-inv-2_2 1 0 17165 0 1 28
-use one-way one-way_0 1 0 -618 0 1 1859
 use inverter inverter_0 1 0 -1166 0 1 2098
+use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_0 1 0 694 0 1 622
+use one-way one-way_0 1 0 -618 0 1 1859
+use pass-gate-inv-2 pass-gate-inv-2_2 1 0 17165 0 1 28
+use pass-gate-inv-2 pass-gate-inv-2_3 1 0 17165 0 1 -1786
+use pass-gate-inv-2 pass-gate-inv-2_1 1 0 17167 0 1 1858
+use pass-gate-inv-2 pass-gate-inv-2_0 1 0 17167 0 1 3624
+use 2x2-array 2x2-array_0 1 0 -23516 0 1 6758
+use inverter inverter_1 1 0 -1150 0 1 7804
+use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_1 1 0 694 0 1 6448
+use one-way one-way_1 1 0 -543 0 1 7572
+use neuron-labeled-extended-opamp neuron-labeled-extended-opamp_2 1 0 694 0 1 12268
 port "SL1" 26 -21954 23602 -21926 23660 m2
 port "BL1" 25 -22352 23710 -22324 23768 m2
 port "SL0" 24 -22728 23472 -22700 23530 m2
@@ -61,12 +61,12 @@ node "vad" 0 27286.3 -7298 22968 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 node "vr" 0 27255.7 -6850 22780 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3351200 60512 3371200 60424 0 0 0 0 0 0 0 0
 node "vk" 0 26956.7 -6422 22634 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3242096 59604 3306996 60344 0 0 0 0 0 0 0 0
 node "axon_buff" 15 6427.65 13316 22094 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 290304 5408 1256976 22670 0 0 0 0 0 0 0 0
-node "vss" 0 61651.8 -2292 23270 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11633092 124790 9271987 131450 0 0 0 0 0 0 0 0
+node "vss" 0 65211.9 -2292 23270 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11633092 124790 9682887 147886 0 0 0 0 0 0 0 0
 node "a_buff" 15 6435.03 12936 22590 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 310912 5776 1237040 22314 0 0 0 0 0 0 0 0
 node "u_buff" 15 6119.23 12548 22954 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 263872 4936 1209376 21820 0 0 0 0 0 0 0 0
 node "v_buff" 14 5810.75 12134 23300 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 214816 4060 1185632 21396 0 0 0 0 0 0 0 0
-node "vdd_aux" 2 14425.4 11518 23554 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 241684 4256 4325060 61200 0 0 0 0 0 0 0 0
-node "vdd" 2 40845.8 -3198 23286 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9465034 94444 7465090 62966 296324 5824 0 0 0 0 0 0
+node "vdd_aux" 12 21920.5 11518 23554 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1141238 15426 4450014 63034 839630 20934 0 0 0 0 0 0
+node "vdd" 0 28886.2 -3198 23286 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6120300 53814 7344408 61180 0 0 0 0 0 0 0 0
 node "vth" 0 27106.7 -6026 23086 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3273028 60168 3309900 60398 0 0 0 0 0 0 0 0
 node "vw" 0 27156 -5548 22932 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3335848 60240 3362280 60264 0 0 0 0 0 0 0 0
 node "vau" 0 27083.2 -5104 22760 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3312816 59828 3368960 60384 0 0 0 0 0 0 0 0
@@ -85,162 +85,170 @@ node "vsyn1" 79 14305.5 -4168 22878 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n1000_8122#" 124 337.387 -1000 8122 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26418 1138 0 0 0 0 0 0 0 0 0 0 0 0
 node "li_n425_7790#" 367 1125.32 -425 7790 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 108240 3728 0 0 0 0 0 0 0 0 0 0 0 0
 substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-cap "m1_10774_6741#" "m1_10436_7166#" 600.48
-cap "SL1" "BL1" 4750.29
-cap "li_n964_7758#" "li_n425_7790#" 4.125
-cap "v_buff" "vdd_aux" 196.478
-cap "sel" "m1_10288_1127#" 69.225
-cap "vsyn1" "vr" 522.73
-cap "m1_10936_1552#" "m1_10288_1127#" 498.403
-cap "vss" "sel" 162.187
-cap "m1_10774_6741#" "sel" 118.732
-cap "vdd_aux" "m1_10436_7166#" 196.478
-cap "i_bias" "vad" 1013.53
-cap "u_syn" "v_syn" 28.72
-cap "vad" "vk" 4509.35
-cap "vth" "vss" 1061.26
-cap "m1_10936_1552#" "m1_10774_6741#" 281.023
-cap "vw" "i_bias" 1013.53
-cap "m1_10436_7166#" "m1_10202_7378#" 1067.62
-cap "vdd" "vr" 845.995
-cap "vsyn1" "vdd" 287.921
-cap "vw" "vk" 1013.53
-cap "vsyn0" "vth" 516.378
-cap "m1_10362_6953#" "m1_10436_7166#" 1421.62
-cap "vau" "vr" 1024.93
-cap "m1_10804_915#" "m1_10348_1340#" 636.423
-cap "vsyn1" "vau" 522.73
-cap "m1_10202_7378#" "sel" 140.581
-cap "m1_10936_1552#" "vdd_aux" 196.478
-cap "axon_syn" "v_syn" 28.72
-cap "m1_10362_6953#" "sel" 141.765
-cap "m1_10936_1552#" "m1_10202_7378#" 3109.31
-cap "vdd" "m1_10804_915#" 227.263
-cap "i_bias" "vk" 1002.21
-cap "m1_10362_6953#" "m1_10936_1552#" 281.023
-cap "vth" "vad" 1013.53
-cap "vth" "vw" 14747.2
-cap "vdd" "vau" 845.995
-cap "a_syn" "v_syn" 28.72
-cap "SL0" "BL1" 4838.41
-cap "m1_10348_1340#" "m1_10288_1127#" 1585.58
-cap "vr" "vss" 1072.21
-cap "vsyn1" "vss" 518.27
-cap "vsyn0" "vr" 522.73
-cap "vsyn0" "vsyn1" 4568.83
-cap "a_buff" "axon_buff" 3133.81
-cap "m1_10774_6741#" "m1_10348_1340#" 281.023
-cap "vdd" "li_n1025_2408#" 39.0888
-cap "m1_10804_915#" "m1_10288_1127#" 1851.78
-cap "m1_10774_6741#" "vdd" 492.546
-cap "vdd" "vss" 2373.48
-cap "vth" "i_bias" 1002.21
-cap "vth" "vk" 6293.91
-cap "vsyn0" "vdd" 287.921
-cap "m1_10436_7166#" "sel" 125.847
-cap "m1_10804_915#" "vss" 226.218
-cap "m1_10774_6741#" "m1_10804_915#" 3815.89
-cap "vdd_aux" "m1_10348_1340#" 196.478
-cap "m1_10936_1552#" "m1_10436_7166#" 281.023
-cap "vr" "vad" 14443.9
-cap "vsyn1" "vad" 522.73
-cap "vau" "vss" 1072.21
-cap "m1_10202_7378#" "m1_10348_1340#" 281.023
-cap "vw" "vr" 1024.93
-cap "vsyn1" "vw" 522.73
-cap "m1_10362_6953#" "m1_10348_1340#" 281.023
-cap "vsyn0" "vau" 4693.56
-cap "u_buff" "axon_buff" 263.674
-cap "li_n980_2052#" "li_n1025_2408#" 41.828
-cap "vdd_aux" "vdd" 258.346
-cap "vdd_aux" "axon_buff" 196.478
-cap "li_n964_7758#" "vsyn1" 5.17164
-cap "m1_10774_6741#" "m1_10288_1127#" 1544.4
-cap "vdd_aux" "m1_10804_915#" 196.478
-cap "m1_10936_1552#" "sel" 69.225
-cap "li_n1000_8122#" "li_n425_7790#" 8.33168
-cap "vdd" "vad" 845.995
-cap "u_syn" "axon_syn" 28.72
-cap "vsyn0" "li_n980_2052#" 5.02174
-cap "m1_10202_7378#" "m1_10804_915#" 281.023
-cap "vdd" "vw" 845.995
-cap "u_buff" "a_buff" 3005.86
-cap "m1_10362_6953#" "m1_10804_915#" 281.023
-cap "m1_10774_6741#" "vss" 226.218
-cap "vdd_aux" "a_buff" 196.478
-cap "i_bias" "vr" 1013.53
-cap "vsyn0" "vss" 518.27
-cap "vau" "vad" 1024.93
-cap "vsyn1" "i_bias" 516.378
-cap "li_n964_7758#" "li_n1000_8122#" 47.0404
-cap "vr" "vk" 17119.9
-cap "u_syn" "a_syn" 4054.11
-cap "vsyn1" "vk" 516.378
-cap "vw" "vau" 15061.7
-cap "vdd_aux" "m1_10288_1127#" 196.478
-cap "m1_10202_7378#" "m1_10288_1127#" 281.023
-cap "m1_10362_6953#" "m1_10288_1127#" 2828.64
-cap "m1_10436_7166#" "m1_10348_1340#" 2824.48
+cap "vau" "vsyn0" 4693.56
+cap "i_bias" "vdd" 837.111
+cap "a_buff" "u_buff" 3005.86
+cap "vss" "vau" 1072.21
 cap "BL0" "SL0" 4749.71
-cap "vdd_aux" "vss" 257.2
-cap "m1_10774_6741#" "vdd_aux" 196.478
-cap "vdd" "i_bias" 837.111
-cap "vdd" "vk" 837.111
-cap "m1_10774_6741#" "m1_10202_7378#" 281.023
-cap "axon_syn" "a_syn" 28.72
-cap "m1_10362_6953#" "m1_10774_6741#" 1645.42
-cap "vad" "vss" 1072.21
-cap "WL0" "WL1" 68.8584
-cap "vsyn0" "vad" 522.73
-cap "u_buff" "vdd_aux" 196.478
-cap "vw" "vss" 1072.21
-cap "vau" "i_bias" 1013.53
-cap "v_buff" "a_buff" 275.751
-cap "vth" "vr" 1013.53
-cap "vau" "vk" 1013.53
-cap "m1_10348_1340#" "sel" 69.225
+cap "vau" "vdd" 845.995
+cap "m1_10362_6953#" "m1_10288_1127#" 2828.64
+cap "m1_10202_7378#" "m1_10288_1127#" 281.023
+cap "vss" "v_syn" 31.3
 cap "vsyn1" "vth" 516.378
-cap "m1_10436_7166#" "m1_10804_915#" 281.023
-cap "vsyn0" "vw" 522.73
-cap "m1_10936_1552#" "m1_10348_1340#" 961.423
-cap "vdd_aux" "m1_10202_7378#" 196.478
-cap "vdd" "sel" 209.867
-cap "m1_10362_6953#" "vdd_aux" 196.478
-cap "li_n980_2052#" "li_n502_2065#" 11.9625
-cap "li_n1025_2408#" "li_n502_2065#" 6.6
-cap "vdd" "vth" 3021.17
-cap "m1_10804_915#" "sel" 69.225
-cap "m1_10362_6953#" "m1_10202_7378#" 542.972
-cap "m1_10436_7166#" "m1_10288_1127#" 281.023
-cap "i_bias" "vss" 1061.26
-cap "m1_10936_1552#" "m1_10804_915#" 281.023
-cap "vss" "vk" 2921.38
-cap "vw" "vad" 1024.93
-cap "vsyn0" "i_bias" 516.378
+cap "m1_10288_1127#" "vdd_aux" 196.478
+cap "sel" "m1_10362_6953#" 141.765
+cap "sel" "m1_10202_7378#" 140.581
+cap "vth" "vk" 6293.91
+cap "vr" "vad" 14443.9
+cap "sel" "vdd_aux" 209.867
+cap "vsyn1" "vk" 516.378
+cap "vsyn0" "vth" 516.378
+cap "u_syn" "a_syn" 4054.11
+cap "vsyn0" "vsyn1" 4568.83
+cap "vdd_aux" "a_syn" 31.112
+cap "vss" "vth" 1061.26
+cap "li_n1025_2408#" "vdd" 39.0888
+cap "m1_10348_1340#" "m1_10288_1127#" 1585.58
+cap "vss" "vsyn1" 518.27
 cap "vsyn0" "vk" 516.378
+cap "li_n425_7790#" "li_n1000_8122#" 8.33168
+cap "vdd" "vth" 3021.17
+cap "m1_10362_6953#" "m1_10436_7166#" 1421.62
+cap "m1_10436_7166#" "m1_10202_7378#" 1067.62
+cap "vss" "vk" 2921.38
+cap "vsyn1" "vdd" 287.921
+cap "sel" "m1_10348_1340#" 69.225
+cap "m1_10436_7166#" "vdd_aux" 196.478
+cap "m1_10804_915#" "m1_10362_6953#" 281.023
+cap "m1_10804_915#" "m1_10202_7378#" 281.023
+cap "vdd" "vk" 837.111
+cap "vss" "vsyn0" 518.27
+cap "m1_10804_915#" "vdd_aux" 423.742
+cap "axon_buff" "a_buff" 3133.81
+cap "li_n1025_2408#" "li_n980_2052#" 41.828
+cap "vsyn0" "vdd" 287.921
+cap "vss" "vdd" 1783.94
+cap "vss" "m1_10774_6741#" 226.218
+cap "m1_10436_7166#" "m1_10348_1340#" 2824.48
+cap "i_bias" "vw" 1013.53
+cap "m1_10804_915#" "m1_10348_1340#" 636.423
+cap "u_syn" "axon_syn" 28.72
+cap "vdd_aux" "axon_syn" 31.112
+cap "vau" "vw" 15061.7
+cap "m1_10936_1552#" "m1_10774_6741#" 281.023
+cap "vsyn0" "li_n980_2052#" 5.02174
+cap "BL1" "SL0" 4838.41
+cap "WL0" "WL1" 68.8584
+cap "axon_buff" "u_buff" 263.674
+cap "v_syn" "a_syn" 28.72
+cap "vw" "vth" 14747.2
+cap "vr" "i_bias" 1013.53
+cap "m1_10362_6953#" "m1_10202_7378#" 542.972
+cap "vw" "vsyn1" 522.73
+cap "li_n1000_8122#" "li_n964_7758#" 47.0404
+cap "m1_10362_6953#" "vdd_aux" 196.478
+cap "m1_10202_7378#" "vdd_aux" 196.478
+cap "vw" "vk" 1013.53
+cap "vr" "vau" 1024.93
+cap "u_syn" "vdd_aux" 31.112
+cap "i_bias" "vad" 1013.53
+cap "vsyn1" "li_n964_7758#" 5.17164
+cap "vw" "vsyn0" 522.73
+cap "vss" "vw" 1072.21
+cap "vss" "sel" 162.187
+cap "vau" "vad" 1024.93
+cap "m1_10936_1552#" "m1_10288_1127#" 498.403
+cap "m1_10774_6741#" "m1_10288_1127#" 1544.4
+cap "vw" "vdd" 845.995
+cap "m1_10348_1340#" "m1_10202_7378#" 281.023
+cap "m1_10362_6953#" "m1_10348_1340#" 281.023
+cap "vss" "a_syn" 31.3
+cap "v_syn" "axon_syn" 28.72
+cap "sel" "m1_10774_6741#" 118.732
+cap "m1_10348_1340#" "vdd_aux" 196.478
+cap "m1_10936_1552#" "sel" 69.225
+cap "v_buff" "vdd_aux" 196.478
+cap "vr" "vth" 1013.53
+cap "vr" "vsyn1" 522.73
+cap "li_n425_7790#" "li_n964_7758#" 4.125
+cap "vr" "vk" 17119.9
+cap "vss" "m1_10804_915#" 226.218
+cap "li_n1025_2408#" "li_n502_2065#" 6.6
+cap "m1_10774_6741#" "m1_10436_7166#" 600.48
+cap "m1_10936_1552#" "m1_10436_7166#" 281.023
+cap "vth" "vad" 1013.53
+cap "vsyn1" "vad" 522.73
+cap "vr" "vsyn0" 522.73
+cap "m1_10804_915#" "m1_10774_6741#" 3815.89
+cap "m1_10936_1552#" "m1_10804_915#" 281.023
+cap "vad" "vk" 4509.35
+cap "vss" "vr" 1072.21
+cap "vr" "vdd" 845.995
+cap "vsyn0" "vad" 522.73
+cap "vss" "axon_syn" 31.3
+cap "a_buff" "vdd_aux" 196.478
+cap "v_syn" "u_syn" 28.72
+cap "v_syn" "vdd_aux" 31.112
+cap "vss" "vad" 1072.21
+cap "BL1" "SL1" 4750.29
+cap "vdd" "vad" 845.995
+cap "sel" "m1_10288_1127#" 69.225
+cap "a_buff" "v_buff" 275.751
+cap "u_buff" "vdd_aux" 196.478
+cap "li_n502_2065#" "li_n980_2052#" 11.9625
+cap "vau" "i_bias" 1013.53
+cap "m1_10436_7166#" "m1_10288_1127#" 281.023
+cap "vss" "u_syn" 31.3
+cap "m1_10804_915#" "m1_10288_1127#" 1851.78
+cap "vss" "vdd_aux" 782.465
+cap "sel" "m1_10436_7166#" 125.847
+cap "m1_10936_1552#" "m1_10202_7378#" 3109.31
+cap "m1_10774_6741#" "m1_10202_7378#" 281.023
+cap "m1_10362_6953#" "m1_10774_6741#" 1645.42
+cap "m1_10804_915#" "sel" 69.225
+cap "m1_10936_1552#" "m1_10362_6953#" 281.023
+cap "m1_10774_6741#" "vdd_aux" 674.801
+cap "m1_10936_1552#" "vdd_aux" 196.478
 cap "u_buff" "v_buff" 2581.61
-cap "vth" "vau" 4410.65
-cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/clk_bar" 7.25654
-cap "pass-gate-inv-2_3/v_out" "pass-gate-inv-2_2/VGND" 31.3
-cap "neuron-labeled-extended-opamp_0/vad" "neuron-labeled-extended-opamp_0/vr" -136.8
-cap "neuron-labeled-extended-opamp_0/vr" "neuron-labeled-extended-opamp_0/vk" -136.164
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/vss" 809.293
+cap "vr" "vw" 1024.93
+cap "i_bias" "vth" 1002.21
+cap "i_bias" "vsyn1" 516.378
+cap "m1_10804_915#" "m1_10436_7166#" 281.023
+cap "m1_10774_6741#" "m1_10348_1340#" 281.023
+cap "vau" "vth" 4410.65
+cap "m1_10936_1552#" "m1_10348_1340#" 961.423
+cap "vw" "vad" 1024.93
+cap "i_bias" "vk" 1002.21
+cap "vau" "vsyn1" 522.73
+cap "axon_syn" "a_syn" 28.72
+cap "vau" "vk" 1013.53
+cap "i_bias" "vsyn0" 516.378
+cap "axon_buff" "vdd_aux" 196.478
+cap "vss" "i_bias" 1061.26
+cap "pass-gate-inv-2_3/vdd" "pass-gate-inv-2_3/vss" -74.42
+cap "pass-gate-inv-2_3/clk_bar" "pass-gate-inv-2_2/clk" 7.25654
+cap "pass-gate-inv-2_3/in_1" "pass-gate-inv-2_3/clk" -2.84217e-14
+cap "pass-gate-inv-2_3/out" "pass-gate-inv-2_2/vss" -1.42109e-14
+cap "pass-gate-inv-2_3/out" "pass-gate-inv-2_2/vdd" -31.112
+cap "neuron-labeled-extended-opamp_0/vr" "neuron-labeled-extended-opamp_0/vad" -136.8
 cap "neuron-labeled-extended-opamp_0/vss" "neuron-labeled-extended-opamp_0/vk" -7.616
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/vk" 258.276
+cap "neuron-labeled-extended-opamp_0/vk" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 258.276
 cap "neuron-labeled-extended-opamp_0/vad" "neuron-labeled-extended-opamp_0/vk" -43.3333
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_241_n175#" 2.08285
+cap "neuron-labeled-extended-opamp_0/vss" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 809.293
+cap "neuron-labeled-extended-opamp_0/vr" "neuron-labeled-extended-opamp_0/vk" -136.164
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vk" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 39.375
-cap "neuron-labeled-extended-opamp_0/vss" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" -242.112
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_543_n176#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 2.60275
-cap "neuron-labeled-extended-opamp_0/vss" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 187.855
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_543_n176#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vr" -0.096
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/vss" -242.112
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_241_n175#" 2.08285
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_543_n176#" 2.60275
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/M5/a_n40_n68#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.0376654
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/M5/a_40_n42#" 0.0539908
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vr" 0.52
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vr" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.52
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_543_n176#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 5.42226
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_543_n176#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vr" -0.096
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/M5/a_40_n42#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.0539908
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/vss" 187.855
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vad" 0.488
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/a_241_n175#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 1.97788
 cap "neuron-labeled-extended-opamp_0/vk" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 11.5388
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vad" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.488
 subcap "m1_10804_915#" -7503.67
 subcap "m1_10288_1127#" -6653.32
 subcap "m1_10348_1340#" -6688.32
@@ -249,33 +257,36 @@ subcap "m1_10804_915#" -6924.42
 subcap "m1_10288_1127#" -6486.57
 subcap "m1_10348_1340#" -6737.44
 subcap "m1_10936_1552#" -6572.78
+cap "neuron-labeled-extended-opamp_0/vk" "neuron-labeled-extended-opamp_0/axon_buff" 2.03927
+cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/axon_buff" -161.1
 cap "vdd_aux" "neuron-labeled-extended-opamp_0/axon_buff" 13.9535
 cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/u_buff" -141.545
-cap "neuron-labeled-extended-opamp_0/axon_buff" "neuron-labeled-extended-opamp_0/a_buff" -161.1
-cap "neuron-labeled-extended-opamp_0/vk" "neuron-labeled-extended-opamp_0/axon_buff" 2.03927
-cap "neuron-labeled-extended-opamp_0/axon_buff" "neuron-labeled-extended-opamp_0/u_buff" -25.3035
 cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/v_buff" -15.7919
-cap "pass-gate-inv-2_3/pass-gate_1/clk" "pass-gate-inv-2_2/clk" 7.25654
-cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_2/VPWR" 5.66794
-cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_2/v_in" 5.68434e-14
-cap "pass-gate-inv-2_2/VGND" "pass-gate-inv-2_2/v_out" 28.7625
+cap "neuron-labeled-extended-opamp_0/axon_buff" "neuron-labeled-extended-opamp_0/u_buff" -25.3035
+cap "pass-gate-inv-2_2/in_1" "pass-gate-inv-2_2/clk" 2.84217e-14
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_2/clk_bar" -5.68434e-14
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/pass-gate_1/clk" 7.25654
+cap "pass-gate-inv-2_2/clk" "pass-gate-inv-2_2/inverter_0/vdd" 5.66794
+cap "pass-gate-inv-2_2/vdd" "pass-gate-inv-2_2/vss" -74.42
+cap "pass-gate-inv-2_2/out" "pass-gate-inv-2_2/vss" 7.10543e-15
+cap "pass-gate-inv-2_2/vdd" "pass-gate-inv-2_2/out" -28.573
 subcap "li_n980_2052#" -144.756
 subcap "li_n502_2065#" -1287.19
-cap "one-way_0/li_100_166#" "inverter_0/VPWR" 0.542466
-cap "inverter_0/out" "inverter_0/VPWR" 3.74403
-cap "one-way_0/li_100_166#" "inverter_0/out" 1.13403
-cap "inverter_0/in" "inverter_0/out" 1.69508
+cap "inverter_0/vdd" "inverter_0/out" 3.74403
+cap "inverter_0/out" "inverter_0/in" 1.69508
+cap "inverter_0/vdd" "one-way_0/li_100_166#" 0.542466
+cap "inverter_0/out" "one-way_0/li_100_166#" 1.13403
 subcap "li_n980_2052#" -11.6773
 subcap "li_n1025_2408#" -467.289
 subcap "li_n502_2065#" -114.166
-cap "one-way_0/w_n37_405#" "one-way_0/li_100_166#" 6.53741
+cap "one-way_0/w_n37_405#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 6.53741
+cap "inverter_0/out" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 2.08911
 cap "one-way_0/w_n37_405#" "inverter_0/out" 1.19294
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" "one-way_0/li_100_166#" 4.07407
-cap "inverter_0/out" "one-way_0/li_100_166#" 2.08911
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" 0.31386
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/axon" 0.0539908
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 4.07407
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 0.31386
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/axon" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.0539908
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/u#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.0520559
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_0/neuron-labeled_0/M1/a_n98_n42#" 0.0376654
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/M1/a_n98_n42#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" 0.0376654
 subcap "m1_10804_915#" -7443.88
 subcap "m1_10288_1127#" -6426.76
 subcap "m1_10348_1340#" -6345.53
@@ -284,186 +295,187 @@ subcap "m1_10804_915#" -7088.95
 subcap "m1_10288_1127#" -6583.07
 subcap "m1_10348_1340#" -6013.84
 subcap "m1_10936_1552#" -5675.01
-cap "neuron-labeled-extended-opamp_0/axon_buff" "neuron-labeled-extended-opamp_0/u_buff" -25.3035
-cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/v_buff" -32.492
-cap "neuron-labeled-extended-opamp_0/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_0/u_buff" 21.9857
 cap "neuron-labeled-extended-opamp_0/u_buff" "neuron-labeled-extended-opamp_0/v_buff" -99
-cap "neuron-labeled-extended-opamp_0/axon_buff" "neuron-labeled-extended-opamp_0/a_buff" -39.6798
-cap "neuron-labeled-extended-opamp_0/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_0/v_buff" 53.8043
-cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/u_buff" -308.317
-cap "pass-gate-inv-2_1/v_in" "pass-gate-inv-2_1/clk" -5.68434e-14
+cap "neuron-labeled-extended-opamp_0/u_buff" "neuron-labeled-extended-opamp_0/axon_buff" -25.3035
+cap "neuron-labeled-extended-opamp_0/v_buff" "neuron-labeled-extended-opamp_0/pmos-diff-amp_3/vss" 53.8043
+cap "neuron-labeled-extended-opamp_0/u_buff" "neuron-labeled-extended-opamp_0/a_buff" -308.317
+cap "neuron-labeled-extended-opamp_0/v_buff" "neuron-labeled-extended-opamp_0/a_buff" -32.492
+cap "neuron-labeled-extended-opamp_0/u_buff" "neuron-labeled-extended-opamp_0/pmos-diff-amp_3/vss" 21.9857
+cap "neuron-labeled-extended-opamp_0/a_buff" "neuron-labeled-extended-opamp_0/axon_buff" -39.6798
+cap "pass-gate-inv-2_1/inverter_0/vdd" "pass-gate-inv-2_1/clk" 3.64525
+cap "pass-gate-inv-2_1/in_1" "pass-gate-inv-2_1/clk" -8.52651e-14
 cap "pass-gate-inv-2_2/pass-gate_1/clk" "pass-gate-inv-2_1/clk" 14.0955
-cap "pass-gate-inv-2_1/clk" "pass-gate-inv-2_1/VPWR" 3.64525
-cap "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_2/pass-gate_1/v_newll" 1.42109e-14
-cap "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_2/pass-gate_1/v_out" 13.5375
-cap "one-way_0/w_n37_405#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 107.942
-cap "neuron-labeled-extended-opamp_0/vw" "neuron-labeled-extended-opamp_0/vth" -66.2143
-cap "one-way_0/w_n37_405#" "neuron-labeled-extended-opamp_0/vdd" 731.305
-cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 4.07407
-cap "neuron-labeled-extended-opamp_0/vau" "neuron-labeled-extended-opamp_0/vw" -27.2812
-cap "neuron-labeled-extended-opamp_0/vau" "neuron-labeled-extended-opamp_0/vth" -11.1346
+cap "pass-gate-inv-2_1/out" "pass-gate-inv-2_2/pass-gate_1/v_newll" 0.342
+cap "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_2/pass-gate_1/v_newll" -73.094
+cap "pass-gate-inv-2_2/pass-gate_1/v_out" "pass-gate-inv-2_2/pass-gate_1/v_newll" -13.339
 cap "neuron-labeled-extended-opamp_0/vdd" "neuron-labeled-extended-opamp_0/vth" -7.497
-cap "one-way_0/w_n37_405#" "neuron-labeled-extended-opamp_0/vth" 324.828
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 4.07407
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/vw" -66.2143
+cap "neuron-labeled-extended-opamp_0/vdd" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 731.305
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/vau" -11.1346
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 107.942
+cap "neuron-labeled-extended-opamp_0/vw" "neuron-labeled-extended-opamp_0/vau" -27.2812
 cap "neuron-labeled-extended-opamp_0/vdd" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" -8.568
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" 0.31386
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 324.828
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" -562.849
-cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 3.18182
-cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vau" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 0.52
-cap "neuron-labeled-extended-opamp_0/u" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 0.502
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" 0.31386
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_0/u" 0.502
 cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vw" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 0.52
-cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 45.2136
-cap "pass-gate-inv-2_1/v_in2" "pass-gate-inv-2_1/pass-gate_1/clk_bar" 7.10543e-15
-cap "pass-gate-inv-2_1/v_in2" "pass-gate-inv-2_0/v_in" 6.64908
-cap "pass-gate-inv-2_1/pass-gate_1/clk_bar" "pass-gate-inv-2_0/v_in" -2.84217e-14
-cap "pass-gate-inv-2_1/clk_bar" "pass-gate-inv-2_1/pass-gate_1/clk_bar" 16.5988
-cap "pass-gate-inv-2_1/pass-gate_1/v_sub" "pass-gate-inv-2_1/v_out" 31.3
-cap "neuron-labeled-extended-opamp_0/vw" "neuron-labeled-extended-opamp_0/vth" -20.1522
-cap "i_bias" "neuron-labeled-extended-opamp_0/v" 0.117801
-cap "neuron-labeled-extended-opamp_0/vau" "neuron-labeled-extended-opamp_0/vw" -63.2609
-cap "neuron-labeled-extended-opamp_0/vau" "neuron-labeled-extended-opamp_0/vth" -11.1346
-cap "pass-gate-inv-2_0/clk" "pass-gate-inv-2_0/v_in" -7.10543e-15
-cap "pass-gate-inv-2_0/clk" "pass-gate-inv-2_0/VPWR" 0.138889
-cap "pass-gate-inv-2_0/clk" "pass-gate-inv-2_0/v_in2" 7.10543e-15
-cap "pass-gate-inv-2_0/v_out" "pass-gate-inv-2_0/VGND" 31.3
-cap "2x2-array_0/1T-cell_0[0,1]/drain" "2x2-array_0/1T-cell_0[0,1]/source" -135.294
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_0/vth" 3.18182
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/vau" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" 0.52
+cap "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_0/vth" 45.2136
+cap "pass-gate-inv-2_1/clk_bar" "pass-gate-inv-2_1/inverter_0/in" 16.5988
+cap "pass-gate-inv-2_1/in_2" "pass-gate-inv-2_0/in_1" 6.64908
+cap "pass-gate-inv-2_1/out" "pass-gate-inv-2_1/pass-gate_1/v_newll" -30.77
+cap "pass-gate-inv-2_1/pass-gate_1/v_sub" "pass-gate-inv-2_1/pass-gate_1/v_newll" -71.9913
+cap "pass-gate-inv-2_1/pass-gate_1/v_sub" "pass-gate-inv-2_1/out" 0.516
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/vau" -11.1346
+cap "neuron-labeled-extended-opamp_0/v" "i_bias" 0.117801
+cap "neuron-labeled-extended-opamp_0/vth" "neuron-labeled-extended-opamp_0/vw" -20.1522
+cap "neuron-labeled-extended-opamp_0/vw" "neuron-labeled-extended-opamp_0/vau" -63.2609
+cap "pass-gate-inv-2_0/clk" "pass-gate-inv-2_0/inverter_0/vdd" 0.138889
+cap "pass-gate-inv-2_0/pass-gate_1/v_newll" "pass-gate-inv-2_0/out" -30.428
+cap "pass-gate-inv-2_0/pass-gate_1/v_newll" "pass-gate-inv-2_0/pass-gate_1/v_sub" 1.56479
+cap "pass-gate-inv-2_0/pass-gate_1/v_sub" "pass-gate-inv-2_0/out" 0.516
 cap "2x2-array_0/1T-cell_0[0,0]/source" "2x2-array_0/1T-cell_0[0,1]/drain" -139.024
+cap "2x2-array_0/1T-cell_0[0,1]/drain" "2x2-array_0/1T-cell_0[0,1]/source" -135.294
 cap "2x2-array_0/1T-cell_0[0,0]/source" "2x2-array_0/1T-cell_0[0,0]/drain" -134.118
-cap "neuron-labeled-extended-opamp_1/vr" "neuron-labeled-extended-opamp_1/vad" -144.6
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/vk" 266.813
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/vss" 670.82
-cap "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_1/vr" -126.078
-cap "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_1/vad" -40.2381
-cap "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_1/vss" -7.584
+cap "neuron-labeled-extended-opamp_1/vad" "neuron-labeled-extended-opamp_1/vk" -40.2381
+cap "neuron-labeled-extended-opamp_1/vr" "neuron-labeled-extended-opamp_1/vad" -144.6
+cap "neuron-labeled-extended-opamp_1/vss" "neuron-labeled-extended-opamp_1/vk" -7.584
+cap "neuron-labeled-extended-opamp_1/vr" "neuron-labeled-extended-opamp_1/vk" -126.078
+cap "neuron-labeled-extended-opamp_1/vss" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" 670.82
 cap "neuron-labeled-extended-opamp_1/vss" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" -430.149
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/vk" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" 43.4894
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vr" 0.52
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/vk" 4.11442
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/vad" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" 0.52
-cap "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" 15.5974
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/vk" 15.5974
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vad" 0.52
 subcap "m1_10774_6741#" -7443.81
 subcap "m1_10362_6953#" -6920.54
 subcap "m1_10436_7166#" -6741.71
 subcap "m1_10774_6741#" -7143.43
 subcap "m1_10362_6953#" -6786.18
 subcap "m1_10436_7166#" -6872.97
-cap "neuron-labeled-extended-opamp_1/axon_buff" "vdd_aux" -22.9689
 cap "neuron-labeled-extended-opamp_1/axon_buff" "neuron-labeled-extended-opamp_1/u_buff" -63.8839
-cap "neuron-labeled-extended-opamp_1/axon_buff" "neuron-labeled-extended-opamp_1/vk" 2.03927
-cap "neuron-labeled-extended-opamp_1/axon_buff" "neuron-labeled-extended-opamp_1/a_buff" -174.512
+cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/axon_buff" -174.512
+cap "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_1/axon_buff" 2.03927
+cap "vdd_aux" "neuron-labeled-extended-opamp_1/axon_buff" -22.9689
 cap "2x2-array_0/WL0" "2x2-array_0/body" 1.43617
-cap "2x2-array_0/1T-cell_0[0,0]/source" "2x2-array_0/1T-cell_0[0,1]/drain" -213.415
+cap "2x2-array_0/1T-cell_0[0,1]/drain" "2x2-array_0/1T-cell_0[0,0]/source" -213.415
 cap "2x2-array_0/1T-cell_0[0,0]/source" "2x2-array_0/1T-cell_0[0,0]/drain" -205.882
 cap "2x2-array_0/1T-cell_0[0,1]/drain" "2x2-array_0/1T-cell_0[0,1]/source" -205.882
-cap "2x2-array_0/body" "2x2-array_0/1T-cell_0[1,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" 1.43617
+cap "2x2-array_0/1T-cell_0[1,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" "2x2-array_0/body" 1.43617
 subcap "li_n964_7758#" -254.575
 subcap "li_n425_7790#" -1372.74
+cap "inverter_1/out" "inverter_1/in" 1.79166
 cap "one-way_1/li_100_166#" "inverter_1/out" 1.83464
-cap "inverter_1/in" "inverter_1/out" 1.79166
-cap "inverter_1/VPWR" "inverter_1/out" 3.60404
+cap "inverter_1/out" "inverter_1/vdd" 3.60404
 subcap "li_n1000_8122#" -400.446
 subcap "li_n425_7790#" -827.643
-cap "one-way_1/li_100_166#" "one-way_1/w_n37_405#" 12.5214
 cap "inverter_1/out" "one-way_1/w_n37_405#" 1.02619
-cap "one-way_1/li_100_166#" "inverter_1/out" 14.1238
+cap "one-way_1/w_n37_405#" "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" 12.5214
+cap "inverter_1/out" "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" 14.1238
 subcap "m1_10774_6741#" -7431.28
 subcap "m1_10362_6953#" -6031.61
 subcap "m1_10436_7166#" -6253.86
 subcap "m1_10202_7378#" -6262.26
-cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/v_buff" -14.6645
+cap "neuron-labeled-extended-opamp_1/v_buff" "neuron-labeled-extended-opamp_1/u_buff" -12.6
 cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/u_buff" -12.4752
-cap "neuron-labeled-extended-opamp_1/u_buff" "neuron-labeled-extended-opamp_1/v_buff" -12.6
+cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/v_buff" -14.6645
 subcap "m1_10774_6741#" -6444.32
 subcap "m1_10362_6953#" -6051.91
 subcap "m1_10436_7166#" -5963.69
 subcap "m1_10202_7378#" -5972.1
 cap "neuron-labeled-extended-opamp_1/v_buff" "neuron-labeled-extended-opamp_1/a_buff" -100.351
-cap "neuron-labeled-extended-opamp_1/u_buff" "neuron-labeled-extended-opamp_1/v_buff" -311.4
-cap "neuron-labeled-extended-opamp_1/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_1/u_buff" 21.9857
-cap "neuron-labeled-extended-opamp_1/axon_buff" "neuron-labeled-extended-opamp_1/a_buff" -174.6
-cap "neuron-labeled-extended-opamp_1/u_buff" "neuron-labeled-extended-opamp_1/a_buff" -308.317
+cap "vdd_aux" "neuron-labeled-extended-opamp_1/axon_buff" -31.2376
 cap "neuron-labeled-extended-opamp_1/axon_buff" "neuron-labeled-extended-opamp_1/u_buff" -54.9201
-cap "neuron-labeled-extended-opamp_1/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_1/v_buff" 53.8043
-cap "neuron-labeled-extended-opamp_1/axon_buff" "vdd_aux" -31.2376
-cap "2x2-array_0/body" "2x2-array_0/WL0" 1.43617
-cap "2x2-array_0/BL1" "2x2-array_0/SL0" -213.415
-cap "2x2-array_0/BL0" "2x2-array_0/SL0" -205.882
+cap "neuron-labeled-extended-opamp_1/v_buff" "neuron-labeled-extended-opamp_1/u_buff" -311.4
+cap "neuron-labeled-extended-opamp_1/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_1/u_buff" 21.9857
+cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/axon_buff" -174.6
+cap "neuron-labeled-extended-opamp_1/a_buff" "neuron-labeled-extended-opamp_1/u_buff" -308.317
+cap "neuron-labeled-extended-opamp_1/v_buff" "neuron-labeled-extended-opamp_1/pmos-diff-amp_3/vss" 53.8043
+cap "2x2-array_0/WL0" "2x2-array_0/body" 1.43617
 cap "2x2-array_0/BL1" "2x2-array_0/SL1" -205.882
+cap "2x2-array_0/SL0" "2x2-array_0/BL0" -205.882
+cap "2x2-array_0/SL0" "2x2-array_0/BL1" -213.415
 cap "2x2-array_0/body" "2x2-array_0/1T-cell_0[1,1]/sky130_fd_bs_flash__special_sonosfet_star_ocehe0_0/a_n33_n99#" 1.43617
-cap "neuron-labeled-extended-opamp_1/vth" "neuron-labeled-extended-opamp_1/vw" -70.875
-cap "neuron-labeled-extended-opamp_1/vth" "one-way_1/w_n37_405#" 264.396
-cap "neuron-labeled-extended-opamp_1/vdd" "one-way_1/w_n37_405#" 733.74
-cap "neuron-labeled-extended-opamp_1/vth" "neuron-labeled-extended-opamp_1/vdd" -7.56
-cap "neuron-labeled-extended-opamp_1/vth" "vau" -23.1923
-cap "one-way_1/li_100_166#" "one-way_1/w_n37_405#" 107.942
-cap "neuron-labeled-extended-opamp_1/vth" "one-way_1/li_100_166#" 8.04878
-cap "neuron-labeled-extended-opamp_1/vdd" "one-way_1/li_100_166#" -8.64
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vth" 0.620606
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 107.942
+cap "vau" "neuron-labeled-extended-opamp_1/vth" -23.1923
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "neuron-labeled-extended-opamp_1/vdd" -8.64
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/vth" 264.396
+cap "neuron-labeled-extended-opamp_1/vdd" "neuron-labeled-extended-opamp_1/vth" -7.56
+cap "neuron-labeled-extended-opamp_1/vdd" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 733.74
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "neuron-labeled-extended-opamp_1/vth" 8.04878
+cap "neuron-labeled-extended-opamp_1/vw" "neuron-labeled-extended-opamp_1/vth" -70.875
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vth" -566.024
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/M3/a_n40_n106#" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.693531
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/Ca/a_n618_n800#" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.293067
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/a_1025_1186#" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.21421
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/vau" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.456
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vth" 0.620606
 cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/vw" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.456
-cap "neuron-labeled-extended-opamp_1/u" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 0.4444
-cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/Ca/a_n618_n800#" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 1.78676
-cap "neuron-labeled-extended-opamp_1/vth" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" 29.025
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/Ca/a_n618_n800#" 0.293067
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/u" 0.4444
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/a_1025_1186#" 0.21421
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/vau" 0.456
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/Ca/a_n618_n800#" 1.78676
+cap "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/vth" 29.025
 cap "2x2-array_0/BL1" "2x2-array_0/SL0" -15.5488
-cap "2x2-array_0/BL0" "2x2-array_0/SL0" -12.9412
-cap "2x2-array_0/BL1" "2x2-array_0/SL1" -18.2353
+cap "2x2-array_0/SL0" "2x2-array_0/BL0" -12.9412
+cap "2x2-array_0/SL1" "2x2-array_0/BL1" -18.2353
 cap "neuron-labeled-extended-opamp_1/vau" "neuron-labeled-extended-opamp_1/vth" -23.1923
-cap "neuron-labeled-extended-opamp_1/vth" "neuron-labeled-extended-opamp_1/vw" -70.875
-cap "neuron-labeled-extended-opamp_1/v" "i_bias" 0.117801
-cap "neuron-labeled-extended-opamp_1/vau" "neuron-labeled-extended-opamp_1/vw" -131.087
-cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/vad" -37.2619
-cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/vr" -136.164
+cap "neuron-labeled-extended-opamp_1/vw" "neuron-labeled-extended-opamp_1/vau" -131.087
+cap "neuron-labeled-extended-opamp_1/vw" "neuron-labeled-extended-opamp_1/vth" -70.875
+cap "i_bias" "neuron-labeled-extended-opamp_1/v" 0.117801
+cap "neuron-labeled-extended-opamp_2/vad" "neuron-labeled-extended-opamp_2/vk" -37.2619
+cap "neuron-labeled-extended-opamp_2/vss" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 293.576
 cap "neuron-labeled-extended-opamp_2/vad" "neuron-labeled-extended-opamp_2/vr" -90
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vss" 293.576
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vk" 185.129
-cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/vss" -0.672
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 43.4894
-cap "neuron-labeled-extended-opamp_2/vss" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" -122.065
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/vr" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 0.52
+cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/vr" -136.164
+cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 185.129
+cap "neuron-labeled-extended-opamp_2/vss" "neuron-labeled-extended-opamp_2/vk" -0.672
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vk" 43.4894
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vss" -122.065
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vr" 0.52
 cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 4.11442
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/vad" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 0.52
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vad" 0.52
 cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 23.533
 cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/vk" 1.01964
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vk" 163.172
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vss" 647.019
-cap "neuron-labeled-extended-opamp_2/vss" "neuron-labeled-extended-opamp_2/vk" -6.912
+cap "neuron-labeled-extended-opamp_2/vss" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 647.019
+cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 163.172
+cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/vss" -6.912
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vk" 17.325
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/vss" -430.144
 cap "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" 2.54742
 cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/a_buff" -23.2907
-cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/u_buff" -72.9
-cap "neuron-labeled-extended-opamp_2/a_buff" "neuron-labeled-extended-opamp_2/u_buff" -80.198
-cap "neuron-labeled-extended-opamp_2/axon_buff" "vdd_aux" 13.9535
-cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/u_buff" -311.4
-cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/u_buff" -50.3195
+cap "neuron-labeled-extended-opamp_2/u_buff" "neuron-labeled-extended-opamp_2/a_buff" -80.198
+cap "neuron-labeled-extended-opamp_2/u_buff" "neuron-labeled-extended-opamp_2/v_buff" -72.9
+cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/vk" 1.01964
+cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/pmos-diff-amp_3/vss" 53.8043
 cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/a_buff" -100.351
 cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/a_buff" -160.2
-cap "neuron-labeled-extended-opamp_2/u_buff" "neuron-labeled-extended-opamp_2/a_buff" -308.317
-cap "neuron-labeled-extended-opamp_2/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_2/v_buff" 53.8043
-cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/vk" 1.01964
+cap "neuron-labeled-extended-opamp_2/v_buff" "neuron-labeled-extended-opamp_2/u_buff" -311.4
+cap "neuron-labeled-extended-opamp_2/axon_buff" "neuron-labeled-extended-opamp_2/u_buff" -50.3195
 cap "neuron-labeled-extended-opamp_2/pmos-diff-amp_3/vss" "neuron-labeled-extended-opamp_2/u_buff" 21.9857
-cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/vdd" -7.56
-cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 200.833
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vdd" 733.74
-cap "neuron-labeled-extended-opamp_2/v" "neuron-labeled-extended-opamp_2/vdd" -8.64
-cap "neuron-labeled-extended-opamp_2/v" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 107.942
+cap "neuron-labeled-extended-opamp_2/a_buff" "neuron-labeled-extended-opamp_2/u_buff" -308.317
+cap "neuron-labeled-extended-opamp_2/axon_buff" "vdd_aux" 13.9535
+cap "neuron-labeled-extended-opamp_2/vdd" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 733.74
+cap "neuron-labeled-extended-opamp_2/vdd" "neuron-labeled-extended-opamp_2/v" -8.64
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/v" 107.942
+cap "neuron-labeled-extended-opamp_2/vdd" "neuron-labeled-extended-opamp_2/vth" -7.56
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" 200.833
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/a_1025_1186#" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 0.693531
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" -579.974
+cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" -579.974
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/neuron-labeled_0/a_1025_1186#" 0.21421
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vw" 0.456
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/u" 0.4444
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/neuron-labeled_0/vau" 0.456
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/neuron-labeled_0/Ca/a_n618_n800#" 0.293067
-cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 14.5125
+cap "neuron-labeled-extended-opamp_2/u" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 0.4444
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/vw" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 0.456
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/vau" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 0.456
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/Ca/a_n618_n800#" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 0.293067
+cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" 14.5125
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/Ca/a_n618_n800#" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 1.78676
-cap "i_bias" "neuron-labeled-extended-opamp_2/v" 0.117801
 cap "neuron-labeled-extended-opamp_2/vau" "neuron-labeled-extended-opamp_2/vth" -19.3846
 cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/vw" -91.6071
+cap "neuron-labeled-extended-opamp_2/vth" "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" 75.2625
 cap "neuron-labeled-extended-opamp_2/vau" "neuron-labeled-extended-opamp_2/vw" -54.7826
-cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" 75.2625
+cap "i_bias" "neuron-labeled-extended-opamp_2/v" 0.117801
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" 13.95
 cap "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_2/vth" 14.5125
 subcap "axon_buff" -6351.89
@@ -478,9 +490,9 @@ subcap "vw" -26919.8
 subcap "vau" -26868.1
 subcap "vsyn0" -14401.3
 subcap "vsyn1" -14144.6
-subcap "vss" -61556.9
-subcap "vdd" -40725.5
-subcap "vdd_aux" -14382.8
+subcap "vss" -65117
+subcap "vdd" -28765.8
+subcap "vdd_aux" -21877.9
 subcap "a_buff" -6032.58
 subcap "u_buff" -5690.76
 subcap "v_buff" -5406.77
@@ -490,44 +502,65 @@ subcap "WL0" -14290.4
 subcap "SL1" -14097.3
 subcap "BL1" -13899.2
 subcap "BL0" -14027.8
-subcap "vdd_aux" -14409.5
+subcap "vdd_aux" -21904.6
 subcap "sel" -14583.7
 subcap "v_syn" -13769.1
 subcap "a_syn" -14161.7
 subcap "u_syn" -13801.5
-merge "neuron-labeled-extended-opamp_2/vdd_aux" "neuron-labeled-extended-opamp_1/vdd_aux" -3387.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 46148 -2236 2139917 -20928 0 0 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_1/vdd_aux" "neuron-labeled-extended-opamp_0/vdd_aux"
-merge "neuron-labeled-extended-opamp_0/vdd_aux" "vdd_aux"
+merge "neuron-labeled-extended-opamp_2/vdd_aux" "neuron-labeled-extended-opamp_1/vdd_aux" -7106.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 154798 -2236 2309558 -24364 -476806 -15954 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_1/vdd_aux" "pass-gate-inv-2_0/pass-gate_1/v_newll"
+merge "pass-gate-inv-2_0/pass-gate_1/v_newll" "pass-gate-inv-2_0/vdd"
+merge "pass-gate-inv-2_0/vdd" "pass-gate-inv-2_1/pass-gate_1/v_newll"
+merge "pass-gate-inv-2_1/pass-gate_1/v_newll" "pass-gate-inv-2_0/inverter_0/vdd"
+merge "pass-gate-inv-2_0/inverter_0/vdd" "pass-gate-inv-2_1/vdd"
+merge "pass-gate-inv-2_1/vdd" "pass-gate-inv-2_2/pass-gate_1/v_newll"
+merge "pass-gate-inv-2_2/pass-gate_1/v_newll" "pass-gate-inv-2_1/inverter_0/vdd"
+merge "pass-gate-inv-2_1/inverter_0/vdd" "neuron-labeled-extended-opamp_0/vdd_aux"
+merge "neuron-labeled-extended-opamp_0/vdd_aux" "pass-gate-inv-2_2/inverter_0/vdd"
+merge "pass-gate-inv-2_2/inverter_0/vdd" "pass-gate-inv-2_2/vdd"
+merge "pass-gate-inv-2_2/vdd" "pass-gate-inv-2_3/inverter_0/vdd"
+merge "pass-gate-inv-2_3/inverter_0/vdd" "pass-gate-inv-2_3/vdd"
+merge "pass-gate-inv-2_3/vdd" "vdd_aux"
 merge "neuron-labeled-extended-opamp_2/vk" "neuron-labeled-extended-opamp_1/vk" -1402.73 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -334294 -4736 -29256 -986 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_1/vk" "neuron-labeled-extended-opamp_0/vk"
 merge "neuron-labeled-extended-opamp_0/vk" "vk"
-merge "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/VSUBS" -9670.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4031088 -31399 22 -588 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_2/neuron-labeled_0/VGND" "neuron-labeled-extended-opamp_2/VSUBS" -13279.8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4031088 -31399 -343500 -17638 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_2/VSUBS" "one-way_1/VSUBS"
-merge "one-way_1/VSUBS" "inverter_1/GND"
-merge "inverter_1/GND" "2x2-array_0/body"
+merge "one-way_1/VSUBS" "inverter_1/vss"
+merge "inverter_1/vss" "2x2-array_0/body"
 merge "2x2-array_0/body" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND"
 merge "neuron-labeled-extended-opamp_1/neuron-labeled_0/VGND" "2x2-array_0/VSUBS"
-merge "2x2-array_0/VSUBS" "neuron-labeled-extended-opamp_1/VSUBS"
-merge "neuron-labeled-extended-opamp_1/VSUBS" "pass-gate-inv-2_0/VSUBS"
-merge "pass-gate-inv-2_0/VSUBS" "pass-gate-inv-2_1/VSUBS"
-merge "pass-gate-inv-2_1/VSUBS" "one-way_0/VSUBS"
-merge "one-way_0/VSUBS" "inverter_0/GND"
-merge "inverter_0/GND" "pass-gate-inv-2_2/VSUBS"
+merge "2x2-array_0/VSUBS" "pass-gate-inv-2_0/pass-gate_1/v_sub"
+merge "pass-gate-inv-2_0/pass-gate_1/v_sub" "neuron-labeled-extended-opamp_1/VSUBS"
+merge "neuron-labeled-extended-opamp_1/VSUBS" "pass-gate-inv-2_0/vss"
+merge "pass-gate-inv-2_0/vss" "pass-gate-inv-2_1/pass-gate_1/v_sub"
+merge "pass-gate-inv-2_1/pass-gate_1/v_sub" "pass-gate-inv-2_0/VSUBS"
+merge "pass-gate-inv-2_0/VSUBS" "pass-gate-inv-2_0/inverter_0/vss"
+merge "pass-gate-inv-2_0/inverter_0/vss" "pass-gate-inv-2_1/vss"
+merge "pass-gate-inv-2_1/vss" "pass-gate-inv-2_2/pass-gate_1/v_sub"
+merge "pass-gate-inv-2_2/pass-gate_1/v_sub" "pass-gate-inv-2_1/VSUBS"
+merge "pass-gate-inv-2_1/VSUBS" "pass-gate-inv-2_1/inverter_0/vss"
+merge "pass-gate-inv-2_1/inverter_0/vss" "one-way_0/VSUBS"
+merge "one-way_0/VSUBS" "inverter_0/vss"
+merge "inverter_0/vss" "pass-gate-inv-2_2/VSUBS"
 merge "pass-gate-inv-2_2/VSUBS" "neuron-labeled-extended-opamp_0/VSUBS"
 merge "neuron-labeled-extended-opamp_0/VSUBS" "pass-gate-inv-2_3/VSUBS"
 merge "pass-gate-inv-2_3/VSUBS" "VSUBS"
 merge "VSUBS" "pass-gate-inv-2_3/pass-gate_1/v_sub"
-merge "pass-gate-inv-2_3/pass-gate_1/v_sub" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND"
-merge "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "pass-gate-inv-2_3/VGND"
-merge "pass-gate-inv-2_3/VGND" "vss"
-merge "vss" "pass-gate-inv-2_2/VGND"
+merge "pass-gate-inv-2_3/pass-gate_1/v_sub" "pass-gate-inv-2_2/inverter_0/vss"
+merge "pass-gate-inv-2_2/inverter_0/vss" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND"
+merge "neuron-labeled-extended-opamp_0/neuron-labeled_0/VGND" "pass-gate-inv-2_2/vss"
+merge "pass-gate-inv-2_2/vss" "pass-gate-inv-2_2/pass-gate_0/v_sub"
+merge "pass-gate-inv-2_2/pass-gate_0/v_sub" "pass-gate-inv-2_3/vss"
+merge "pass-gate-inv-2_3/vss" "pass-gate-inv-2_3/inverter_0/vss"
+merge "pass-gate-inv-2_3/inverter_0/vss" "vss"
 merge "neuron-labeled-extended-opamp_0/neuron-labeled_0/v" "one-way_0/li_100_166#" -24.0615 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -55316 -378 0 0 0 0 0 0 0 0 0 0 0 0
 merge "one-way_0/li_100_166#" "li_n502_2065#"
 merge "neuron-labeled-extended-opamp_2/vw" "neuron-labeled-extended-opamp_1/vw" -815.496 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6760 -2804 -46592 -1056 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_1/vw" "neuron-labeled-extended-opamp_0/vw"
 merge "neuron-labeled-extended-opamp_0/vw" "vw"
-merge "pass-gate-inv-2_1/pass-gate_1/v_out" "pass-gate-inv-2_1/v_out" -452.773 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -216905 -402 0 0 -9966 -670 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_1/v_out" "u_syn"
+merge "pass-gate-inv-2_1/pass-gate_1/v_out" "pass-gate-inv-2_1/out" -452.773 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -216905 -402 0 0 -9966 -670 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/out" "u_syn"
 merge "neuron-labeled-extended-opamp_2/v_buff" "v_buff" -855.211 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81088 -1944 -66880 -1832 0 0 0 0 0 0 0 0
 merge "2x2-array_0/1T-cell_0[1,0]/source" "2x2-array_0/1T-cell_0[0,0]/source" -868.531 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2037104 -8460 0 0 0 0 0 0 0 0
 merge "2x2-array_0/1T-cell_0[0,0]/source" "2x2-array_0/SL0"
@@ -549,65 +582,57 @@ merge "one-way_0/li_12_16#" "inverter_0/out" -72.1659 0 0 0 0 0 0 0 0 0 0 0 0 0 
 merge "inverter_0/out" "li_n980_2052#"
 merge "2x2-array_0/BL1" "2x2-array_0/1T-cell_0[0,1]/drain" -1841.04 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -216424 -8532 0 0 0 0 0 0 0 0
 merge "2x2-array_0/1T-cell_0[0,1]/drain" "BL1"
-merge "neuron-labeled-extended-opamp_0/axon_buff" "pass-gate-inv-2_3/v_in2" -536.883 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -363620 -1466 0 0 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_3/v_in2" "m1_10804_915#"
-merge "pass-gate-inv-2_0/v_in2" "neuron-labeled-extended-opamp_0/v_buff" -285.601 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -129678 -982 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/in_2" "neuron-labeled-extended-opamp_0/v_buff" -286.323 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -103666 -1068 0 0 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_0/v_buff" "m1_10936_1552#"
 merge "neuron-labeled-extended-opamp_2/axon_buff" "axon_buff" -408.708 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -211974 -952 -6552 -356 0 0 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_1/axon_buff" "pass-gate-inv-2_3/v_in" -294.153 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33082 -1330 0 0 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_3/v_in" "m1_10774_6741#"
-merge "neuron-labeled-extended-opamp_1/a_buff" "pass-gate-inv-2_2/v_in" -436.267 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1850 -2134 0 0 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_2/v_in" "m1_10362_6953#"
-merge "pass-gate-inv-2_0/v_out" "pass-gate-inv-2_0/pass-gate_1/v_out" -179.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1840 -570 15880 0 -1280 -168 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/out" "pass-gate-inv-2_0/pass-gate_1/v_out" -179.71 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1840 -570 15880 0 -1280 -168 0 0 0 0 0 0 0 0
 merge "pass-gate-inv-2_0/pass-gate_1/v_out" "v_syn"
-merge "pass-gate-inv-2_2/v_in2" "neuron-labeled-extended-opamp_0/a_buff" -606.193 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -162436 -2442 0 0 0 0 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_0/a_buff" "m1_10288_1127#"
+merge "neuron-labeled-extended-opamp_1/axon_buff" "pass-gate-inv-2_3/in_1" -318.343 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -33082 -1448 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_3/in_1" "m1_10774_6741#"
+merge "neuron-labeled-extended-opamp_1/a_buff" "pass-gate-inv-2_2/in_1" -462.528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1336 -2252 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_2/in_1" "m1_10362_6953#"
 merge "neuron-labeled-extended-opamp_2/vr" "neuron-labeled-extended-opamp_1/vr" -1512.82 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -252672 -5408 -47488 -1072 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_1/vr" "neuron-labeled-extended-opamp_0/vr"
 merge "neuron-labeled-extended-opamp_0/vr" "vr"
-merge "pass-gate-inv-2_0/clk" "pass-gate-inv-2_1/pass-gate_1/clk_bar" -921.719 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -110186 -800 -392968 0 402840 -748 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_1/pass-gate_1/clk_bar" "pass-gate-inv-2_1/clk"
+merge "pass-gate-inv-2_0/clk" "pass-gate-inv-2_1/inverter_0/in" -617.541 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -110186 -800 -397016 0 284968 -774 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/inverter_0/in" "pass-gate-inv-2_1/clk"
 merge "pass-gate-inv-2_1/clk" "pass-gate-inv-2_2/clk"
 merge "pass-gate-inv-2_2/clk" "pass-gate-inv-2_3/clk"
 merge "pass-gate-inv-2_3/clk" "sel"
-merge "neuron-labeled-extended-opamp_1/u_buff" "pass-gate-inv-2_1/pass-gate_0/v_in" -321.258 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 129588 -1978 0 0 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_1/pass-gate_0/v_in" "pass-gate-inv-2_1/v_in"
-merge "pass-gate-inv-2_1/v_in" "m1_10436_7166#"
-merge "pass-gate-inv-2_1/v_in2" "neuron-labeled-extended-opamp_0/u_buff" -450.841 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2910 -2190 0 0 0 0 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_0/u_buff" "m1_10348_1340#"
+merge "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" -5310.2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -297631 -638 -2509497 -25672 -17914 -550 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "one-way_1/w_n37_405#"
+merge "one-way_1/w_n37_405#" "inverter_1/vdd"
+merge "inverter_1/vdd" "li_n1000_8122#"
+merge "li_n1000_8122#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR"
+merge "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" "one-way_0/w_n37_405#"
+merge "one-way_0/w_n37_405#" "inverter_0/vdd"
+merge "inverter_0/vdd" "li_n1025_2408#"
+merge "li_n1025_2408#" "vdd"
+merge "neuron-labeled-extended-opamp_1/u_buff" "pass-gate-inv-2_1/pass-gate_0/v_in" -317.299 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172894 -2096 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_1/pass-gate_0/v_in" "pass-gate-inv-2_1/in_1"
+merge "pass-gate-inv-2_1/in_1" "m1_10436_7166#"
 merge "inverter_0/in" "vsyn0" -221.478 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2520 -212 0 0 -23452 -736 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_0/VPWR" "pass-gate-inv-2_1/VPWR" -93.6058 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5886 -448 0 0 0 0 0 0
-merge "pass-gate-inv-2_1/VPWR" "pass-gate-inv-2_2/pass-gate_1/v_newll"
+merge "pass-gate-inv-2_1/in_2" "neuron-labeled-extended-opamp_0/u_buff" -472.052 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8418 -2276 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_0/u_buff" "m1_10348_1340#"
 merge "neuron-labeled-extended-opamp_2/vau" "neuron-labeled-extended-opamp_1/vau" -58.4263 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 934970 -2200 -31616 -984 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_1/vau" "neuron-labeled-extended-opamp_0/vau"
 merge "neuron-labeled-extended-opamp_0/vau" "vau"
-merge "pass-gate-inv-2_0/VGND" "pass-gate-inv-2_1/pass-gate_1/v_sub" -86.4812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3650 -246 0 0 0 0 0 0 0 0
 merge "one-way_1/li_12_16#" "inverter_1/out" -71.0514 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13566 -304 0 0 0 0 0 0 0 0 0 0 0 0
 merge "inverter_1/out" "li_n964_7758#"
 merge "inverter_1/in" "vsyn1" -64.2159 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172250 -228 0 0 -23452 -736 0 0 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_1/v_buff" "pass-gate-inv-2_0/v_in" -549.362 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96450 -2374 0 0 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_0/v_in" "m1_10202_7378#"
-merge "neuron-labeled-extended-opamp_2/u_buff" "u_buff" -885.494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82432 -1968 -93632 -1896 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_3/v_out" "pass-gate-inv-2_3/pass-gate_1/v_out" -172.847 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18040 -562 0 0 -1280 -168 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_1/v_buff" "pass-gate-inv-2_0/in_1" -573.476 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -96332 -2492 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_0/in_1" "m1_10202_7378#"
+merge "pass-gate-inv-2_3/out" "pass-gate-inv-2_3/pass-gate_1/v_out" -172.847 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18040 -562 0 0 -1280 -168 0 0 0 0 0 0 0 0
 merge "pass-gate-inv-2_3/pass-gate_1/v_out" "axon_syn"
-merge "pass-gate-inv-2_2/v_out" "pass-gate-inv-2_2/pass-gate_1/v_out" -263.234 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20110 -510 0 0 -9966 -670 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_2/u_buff" "u_buff" -885.494 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -82432 -1968 -93632 -1896 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_0/axon_buff" "pass-gate-inv-2_3/in_2" -546.155 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -350762 -1552 0 0 0 0 0 0 0 0 0 0
+merge "pass-gate-inv-2_3/in_2" "m1_10804_915#"
+merge "pass-gate-inv-2_2/out" "pass-gate-inv-2_2/pass-gate_1/v_out" -263.234 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20110 -510 0 0 -9966 -670 0 0 0 0 0 0 0 0
 merge "pass-gate-inv-2_2/pass-gate_1/v_out" "a_syn"
-merge "neuron-labeled-extended-opamp_2/neuron-labeled_0/VPWR" "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" -5350.51 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -297631 -638 -2509497 -25672 -17914 -550 -1800 -194 0 0 0 0 0 0
-merge "neuron-labeled-extended-opamp_1/neuron-labeled_0/VPWR" "one-way_1/w_n37_405#"
-merge "one-way_1/w_n37_405#" "inverter_1/VPWR"
-merge "inverter_1/VPWR" "li_n1000_8122#"
-merge "li_n1000_8122#" "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR"
-merge "neuron-labeled-extended-opamp_0/neuron-labeled_0/VPWR" "one-way_0/w_n37_405#"
-merge "one-way_0/w_n37_405#" "inverter_0/VPWR"
-merge "inverter_0/VPWR" "li_n1025_2408#"
-merge "li_n1025_2408#" "pass-gate-inv-2_3/VPWR"
-merge "pass-gate-inv-2_3/VPWR" "pass-gate-inv-2_2/m3_706_n156#"
-merge "pass-gate-inv-2_2/m3_706_n156#" "pass-gate-inv-2_3/m3_706_n156#"
-merge "pass-gate-inv-2_3/m3_706_n156#" "vdd"
-merge "vdd" "pass-gate-inv-2_2/VPWR"
 merge "neuron-labeled-extended-opamp_2/a_buff" "a_buff" -705.257 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 178794 -2044 -65208 -1828 0 0 0 0 0 0 0 0
 merge "neuron-labeled-extended-opamp_1/neuron-labeled_0/v" "one-way_1/li_100_166#" -276.658 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -435172 -382 0 0 0 0 0 0 0 0 0 0 0 0
 merge "one-way_1/li_100_166#" "li_n425_7790#"
+merge "pass-gate-inv-2_2/in_2" "neuron-labeled-extended-opamp_0/a_buff" -617.708 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -153028 -2528 0 0 0 0 0 0 0 0 0 0
+merge "neuron-labeled-extended-opamp_0/a_buff" "m1_10288_1127#"
 merge "2x2-array_0/WL0" "WL0" -224.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10368 -480 -9272 -564 0 0 0 0 0 0 0 0
 merge "2x2-array_0/WL1" "WL1" -234.718 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -7176 -544 -8784 -560 0 0 0 0 0 0 0 0
-merge "pass-gate-inv-2_1/VGND" "pass-gate-inv-2_2/pass-gate_1/v_sub" -25.7098 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -432 -114 0 0 0 0 0 0 0 0

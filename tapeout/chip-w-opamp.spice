@@ -20,7 +20,7 @@ Vad vad gnd DC 0.0V
 Vdd_aux vdd_aux gnd DC 1.8V
 Ibias i_bias gnd DC 1n
 
-Vsel sel gnd DC 0.7V
+Vsel sel gnd DC 0V
 Vsyn0 vsyn0 gnd DC 0.7V
 Vsyn1 vsyn1 gnd DC 0.42V
 
@@ -35,6 +35,7 @@ Vsyn1 vsyn1 gnd DC 0.42V
 * Vad vad gnd DC 0.25V
 
 Idc vdd "xneuron.neuron-labeled-extended-opamp_2/v" DC 10p
+
 
 * NGSPICE file created from chip-w-opamp.ext - technology: sky130A
 
@@ -60,9 +61,9 @@ X0 a_15_n42# a_n15_n68# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=150
 X0 a_15_n42# a_n15_n68# a_n73_n42# w_n109_n104# sky130_fd_pr__pfet_01v8 w=420000u l=150000u
 .ends
 
-.subckt inverter GND in VPWR out
-Xsky130_fd_pr__nfet_01v8_8mr83b_0 GND GND in out sky130_fd_pr__nfet_01v8_8mr83b
-Xsky130_fd_pr__pfet_01v8_ykwexw_0 GND VPWR VPWR in out sky130_fd_pr__pfet_01v8_ykwexw
+.subckt inverter in out vdd vss
+Xsky130_fd_pr__nfet_01v8_8mr83b_0 vss vss in out sky130_fd_pr__nfet_01v8_8mr83b
+Xsky130_fd_pr__pfet_01v8_ykwexw_0 vss vdd vdd in out sky130_fd_pr__pfet_01v8_ykwexw
 .ends
 
 * .subckt sky130_fd_bs_flash__special_sonosfet_star_ocehe0 VSUBS a_15_n11# a_n33_n99#
@@ -199,48 +200,45 @@ X0 a_15_n42# a_n33_n130# a_n73_n42# VSUBS sky130_fd_pr__nfet_01v8 w=420000u l=15
 X0 a_15_n80# a_n33_n177# a_n73_n80# w_n109_n180# sky130_fd_pr__pfet_01v8 w=800000u l=150000u
 .ends
 
-.subckt pass-gate clk clk_bar v_in v_out v_newll v_sub
+.subckt pass-gate clk clk_bar v_in v_out v_newll v_sub v_out
 Xsky130_fd_pr__nfet_01v8_5mkfxl_0 v_sub v_out v_in clk sky130_fd_pr__nfet_01v8_5mkfxl
 Xsky130_fd_pr__pfet_01v8_pa2hmj_0 v_sub clk_bar v_out v_newll v_in sky130_fd_pr__pfet_01v8_pa2hmj
 .ends
 
-.subckt pass-gate-inv-2 v_in v_out clk clk_bar VPWR VGND v_in2 VGND VPWR v_out v_in
-+ clk VGND VPWR
-Xinverter_0 VGND clk VPWR clk_bar inverter
-Xpass-gate_0 clk clk_bar v_in v_out VPWR VGND pass-gate
-Xpass-gate_1 clk_bar clk v_in2 v_out VPWR VGND pass-gate
+.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss clk out in_1 vdd vss
++ vss vss
+Xinverter_0 clk clk_bar vdd vss inverter
+Xpass-gate_0 clk clk_bar in_1 out vdd vss out pass-gate
+Xpass-gate_1 clk_bar clk in_2 out vdd vss out pass-gate
 .ends
 
 .subckt chip-w-opamp i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
 + u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1
 Xone-way_0 vss inverter_0/out vdd neuron-labeled-extended-opamp_0/v one-way
 Xone-way_1 vss inverter_1/out vdd neuron-labeled-extended-opamp_1/v one-way
-Xinverter_0 vss vsyn0 vdd inverter_0/out inverter
-Xinverter_1 vss vsyn1 vdd inverter_1/out inverter
+Xinverter_0 vsyn0 inverter_0/out vdd vss inverter
+Xinverter_1 vsyn1 inverter_1/out vdd vss inverter
 * X2x2-array_0 WL0 WL1 BL0 SL0 BL1 SL1 vss vss BL0 SL0 SL1 BL1 SL0 x2-array
 Xneuron-labeled-extended-opamp_0 neuron-labeled-extended-opamp_0/v neuron-labeled-extended-opamp_0/u
 + neuron-labeled-extended-opamp_0/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_0/axon
-+ i_bias pass-gate-inv-2_0/v_in2 pass-gate-inv-2_1/v_in2 pass-gate-inv-2_2/v_in2 pass-gate-inv-2_3/v_in2
++ i_bias pass-gate-inv-2_0/in_2 pass-gate-inv-2_1/in_2 pass-gate-inv-2_2/in_2 pass-gate-inv-2_3/in_2
 + vdd_aux vss vdd neuron-labeled-extended-opamp_0/v vss neuron-labeled-extended-opamp
 Xneuron-labeled-extended-opamp_1 neuron-labeled-extended-opamp_1/v neuron-labeled-extended-opamp_1/u
 + neuron-labeled-extended-opamp_1/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_1/axon
-+ i_bias pass-gate-inv-2_0/v_in pass-gate-inv-2_1/v_in pass-gate-inv-2_2/v_in pass-gate-inv-2_3/v_in
++ i_bias pass-gate-inv-2_0/in_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_2/in_1 pass-gate-inv-2_3/in_1
 + vdd_aux vss vdd neuron-labeled-extended-opamp_1/v vss neuron-labeled-extended-opamp
 Xneuron-labeled-extended-opamp_2 neuron-labeled-extended-opamp_2/v neuron-labeled-extended-opamp_2/u
 + neuron-labeled-extended-opamp_2/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon
 + i_bias v_buff u_buff a_buff axon_buff vdd_aux vss vdd neuron-labeled-extended-opamp_2/v
 + vss neuron-labeled-extended-opamp
-Xpass-gate-inv-2_0 pass-gate-inv-2_0/v_in v_syn sel pass-gate-inv-2_0/clk_bar pass-gate-inv-2_0/VPWR
-+ vss pass-gate-inv-2_0/v_in2 vss pass-gate-inv-2_0/VPWR v_syn pass-gate-inv-2_0/v_in
-+ sel vss pass-gate-inv-2_0/inverter_0/VPWR pass-gate-inv-2
-Xpass-gate-inv-2_1 pass-gate-inv-2_1/v_in u_syn sel pass-gate-inv-2_1/clk_bar pass-gate-inv-2_0/VPWR
-+ vss pass-gate-inv-2_1/v_in2 vss pass-gate-inv-2_0/VPWR u_syn pass-gate-inv-2_1/v_in
-+ sel vss pass-gate-inv-2_1/inverter_0/VPWR pass-gate-inv-2
-Xpass-gate-inv-2_2 pass-gate-inv-2_2/v_in a_syn sel pass-gate-inv-2_2/clk_bar vdd
-+ vss pass-gate-inv-2_2/v_in2 vss vdd a_syn pass-gate-inv-2_2/v_in sel vss pass-gate-inv-2_0/VPWR
-+ pass-gate-inv-2
-Xpass-gate-inv-2_3 pass-gate-inv-2_3/v_in axon_syn sel pass-gate-inv-2_3/clk_bar vdd
-+ vss pass-gate-inv-2_3/v_in2 vss vdd axon_syn pass-gate-inv-2_3/v_in sel vss pass-gate-inv-2_3/inverter_0/VPWR
+Xpass-gate-inv-2_0 pass-gate-inv-2_0/in_1 pass-gate-inv-2_0/in_2 sel pass-gate-inv-2_0/clk_bar
++ v_syn vdd_aux vss vss sel v_syn pass-gate-inv-2_0/in_1 vdd_aux vss vss vss pass-gate-inv-2
+Xpass-gate-inv-2_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_1/in_2 sel pass-gate-inv-2_1/clk_bar
++ u_syn vdd_aux vss vss sel u_syn pass-gate-inv-2_1/in_1 vdd_aux vss vss vss pass-gate-inv-2
+Xpass-gate-inv-2_2 pass-gate-inv-2_2/in_1 pass-gate-inv-2_2/in_2 sel pass-gate-inv-2_2/clk_bar
++ a_syn vdd_aux vss vss sel a_syn pass-gate-inv-2_2/in_1 vdd_aux vss vss vss pass-gate-inv-2
+Xpass-gate-inv-2_3 pass-gate-inv-2_3/in_1 pass-gate-inv-2_3/in_2 sel pass-gate-inv-2_3/clk_bar
++ axon_syn vdd_aux vss vss sel axon_syn pass-gate-inv-2_3/in_1 vdd_aux vss vss vss
 + pass-gate-inv-2
 .ends
 
