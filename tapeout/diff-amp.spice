@@ -12,7 +12,7 @@
 * Vin in_1 gnd DC 0.2 
 
 Vdd vdd gnd DC 0.7
-Vgnd vss gnd DC -0.7
+Vgnd vss gnd DC 0
 Ibias vdd i_bias DC 1n
 Vshort in_2 vout DC 0.0
 Vin in_1 gnd DC PULSE(0 0.7 100p 1u 1u 10u 20u)
