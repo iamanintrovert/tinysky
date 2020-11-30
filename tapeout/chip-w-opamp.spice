@@ -20,9 +20,9 @@ Vad vad gnd DC 0.0V
 Vdd_aux vdd_aux gnd DC 1.8V
 Ibias i_bias gnd DC 1n
 
-Vsel sel gnd DC 0V
+Vsel sel gnd DC 1.8V
 Vsyn0 vsyn0 gnd DC 0.7V
-Vsyn1 vsyn1 gnd DC 0.42V
+Vsyn1 vsyn1 gnd DC 0.425V
 
 
 * Vdd VPWR gnd DC 0.7V
@@ -34,8 +34,7 @@ Vsyn1 vsyn1 gnd DC 0.42V
 * Vau vau gnd DC 0.08V
 * Vad vad gnd DC 0.25V
 
-Idc vdd "xneuron.neuron-labeled-extended-opamp_2/v" DC 10p
-
+Idc vdd i_in DC 10p
 
 * NGSPICE file created from chip-w-opamp.ext - technology: sky130A
 
@@ -205,15 +204,15 @@ Xsky130_fd_pr__nfet_01v8_5mkfxl_0 v_sub v_out v_in clk sky130_fd_pr__nfet_01v8_5
 Xsky130_fd_pr__pfet_01v8_pa2hmj_0 v_sub clk_bar v_out v_newll v_in sky130_fd_pr__pfet_01v8_pa2hmj
 .ends
 
-.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss clk out in_1 vdd vss
-+ vss vss
+.subckt pass-gate-inv-2 in_1 in_2 clk clk_bar out vdd vss vss vdd out in_1 clk vss
++ vss
 Xinverter_0 clk clk_bar vdd vss inverter
 Xpass-gate_0 clk clk_bar in_1 out vdd vss out pass-gate
 Xpass-gate_1 clk_bar clk in_2 out vdd vss out pass-gate
 .ends
 
 .subckt chip-w-opamp i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
-+ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1
++ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 i_in
 Xone-way_0 vss inverter_0/out vdd neuron-labeled-extended-opamp_0/v one-way
 Xone-way_1 vss inverter_1/out vdd neuron-labeled-extended-opamp_1/v one-way
 Xinverter_0 vsyn0 inverter_0/out vdd vss inverter
@@ -227,35 +226,34 @@ Xneuron-labeled-extended-opamp_1 neuron-labeled-extended-opamp_1/v neuron-labele
 + neuron-labeled-extended-opamp_1/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_1/axon
 + i_bias pass-gate-inv-2_0/in_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_2/in_1 pass-gate-inv-2_3/in_1
 + vdd_aux vss vdd neuron-labeled-extended-opamp_1/v vss neuron-labeled-extended-opamp
-Xneuron-labeled-extended-opamp_2 neuron-labeled-extended-opamp_2/v neuron-labeled-extended-opamp_2/u
-+ neuron-labeled-extended-opamp_2/a vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon
-+ i_bias v_buff u_buff a_buff axon_buff vdd_aux vss vdd neuron-labeled-extended-opamp_2/v
-+ vss neuron-labeled-extended-opamp
+Xneuron-labeled-extended-opamp_2 i_in neuron-labeled-extended-opamp_2/u neuron-labeled-extended-opamp_2/a
++ vau vw vth vk vr vad vdd vss neuron-labeled-extended-opamp_2/axon i_bias v_buff
++ u_buff a_buff axon_buff vdd_aux vss vdd i_in vss neuron-labeled-extended-opamp
 Xpass-gate-inv-2_0 pass-gate-inv-2_0/in_1 pass-gate-inv-2_0/in_2 sel pass-gate-inv-2_0/clk_bar
-+ v_syn vdd_aux vss vss sel v_syn pass-gate-inv-2_0/in_1 vdd_aux vss vss vss pass-gate-inv-2
++ v_syn vdd_aux vss vss vdd_aux v_syn pass-gate-inv-2_0/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_1 pass-gate-inv-2_1/in_1 pass-gate-inv-2_1/in_2 sel pass-gate-inv-2_1/clk_bar
-+ u_syn vdd_aux vss vss sel u_syn pass-gate-inv-2_1/in_1 vdd_aux vss vss vss pass-gate-inv-2
++ u_syn vdd_aux vss vss vdd_aux u_syn pass-gate-inv-2_1/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_2 pass-gate-inv-2_2/in_1 pass-gate-inv-2_2/in_2 sel pass-gate-inv-2_2/clk_bar
-+ a_syn vdd_aux vss vss sel a_syn pass-gate-inv-2_2/in_1 vdd_aux vss vss vss pass-gate-inv-2
++ a_syn vdd_aux vss vss vdd_aux a_syn pass-gate-inv-2_2/in_1 sel vss vss pass-gate-inv-2
 Xpass-gate-inv-2_3 pass-gate-inv-2_3/in_1 pass-gate-inv-2_3/in_2 sel pass-gate-inv-2_3/clk_bar
-+ axon_syn vdd_aux vss vss sel axon_syn pass-gate-inv-2_3/in_1 vdd_aux vss vss vss
-+ pass-gate-inv-2
++ axon_syn vdd_aux vss vss vdd_aux axon_syn pass-gate-inv-2_3/in_1 sel vss vss pass-gate-inv-2
 .ends
+
 
 
 
 
 * instantiate the neuron for sim
 Xneuron i_bias vad vr vk vth vw vau vsyn0 vsyn1 vdd vss vdd_aux sel v_syn
-+ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 chip-w-opamp
++ u_syn a_syn axon_syn v_buff u_buff a_buff axon_buff WL0 WL1 BL0 SL0 BL1 SL1 i_in chip-w-opamp
 
-.IC V("xneuron.neuron-labeled-extended-opamp_2/v")=0 V("xneuron.neuron-labeled-extended-opamp_2/u")=0 V("xneuron.neuron-labeled-extended-opamp_2/a")=0
+.IC V(i_in)=0 V("xneuron.neuron-labeled-extended-opamp_2/u")=0 V("xneuron.neuron-labeled-extended-opamp_2/a")=0
 
 .control
 * Sweep tran
 tran 1u 20m uic
-plot v("xneuron.neuron-labeled-extended-opamp_2/v")
-plot v(v_buff)
+plot v(i_in) v(v_buff)
+plot v("xneuron.neuron-labeled-extended-opamp_1/v") v(v_syn)
 .endc
 .end
 
